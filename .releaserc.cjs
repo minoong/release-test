@@ -1,7 +1,7 @@
 const getConfig = () => {
     return {
       branches: [
-        'main',
+        'master',
         {name: 'dev', prerelease: 'dev'},
         {name: 'stg', prerelease: 'stg'}
       ],
