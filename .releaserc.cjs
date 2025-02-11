@@ -7,7 +7,10 @@ const getConfig = () => {
       ],
       plugins: [
         ['@semantic-release/commit-analyzer', {
-          preset: 'conventionalcommits'
+          preset: 'conventionalcommits',
+          "releaseRules": [
+            { "scope": "no-release", "release": 'minor' }
+          ]
         }],
         '@semantic-release/release-notes-generator',
         ['@semantic-release/github', {
